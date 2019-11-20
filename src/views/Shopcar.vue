@@ -1,7 +1,7 @@
 <template>
-  <div class="home-main">
-    主页
-  </div>
+    <div class="shopcar-main">
+        购物车
+    </div>
 </template>
 
 <script>

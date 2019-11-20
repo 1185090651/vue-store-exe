@@ -1,6 +1,6 @@
 <template>
-  <div class="home-main">
-    主页
+  <div class="city-main">
+    同城
   </div>
 </template>
 
@@ -10,6 +10,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style>
 
 </style>

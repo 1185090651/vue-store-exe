@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <van-nav-bar title="明明商城" left-text="返回" left-arrow>
+    <van-nav-bar title="商城" left-text="返回" left-arrow class="header">
       <van-icon name="search" slot="right" />
     </van-nav-bar>
     <div class="main">
@@ -32,10 +32,13 @@ export default {
   height: 100%;
   display: flex;
   flex-direction: column;
+  .header{
+    
+  }
   .main{
     flex:1;
     overflow: auto;
-    background-color: #ccc;
+    // background-color: #ccc;
   }
   .footer{
       .van-tabbar{
