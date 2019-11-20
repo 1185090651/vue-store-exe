@@ -1,32 +1,47 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <van-nav-bar title="明明商城" left-text="返回" left-arrow>
+      <van-icon name="search" slot="right" />
+    </van-nav-bar>
+    <div class="main">
+      <router-view></router-view>
     </div>
-    <router-view/>
+    <div class="footer">
+      <van-tabbar route>
+        <van-tabbar-item replace to="/" icon="wap-home-o">首页</van-tabbar-item>
+        <van-tabbar-item replace to="/city" icon="friends-o">同城</van-tabbar-item>
+        <van-tabbar-item replace to="/shopcar" icon="shopping-cart-o">购物车</van-tabbar-item>
+        <van-tabbar-item replace to="/my" icon="contact">我的</van-tabbar-item>
+      </van-tabbar>
+    </div>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+export default {
+  data(){
+    return {
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
     }
   }
+}
+</script>
+
+<style lang="scss" scoped>
+#app{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .main{
+    flex:1;
+    overflow: auto;
+    background-color: #ccc;
+  }
+  .footer{
+      .van-tabbar{
+        height: 60px;
+      }
+    }
+  
 }
 </style>
