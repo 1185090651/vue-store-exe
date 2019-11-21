@@ -32,9 +32,9 @@ export default {
   height: 100%;
   display: flex;
   flex-direction: column;
-  .header{
+  // .header{
     
-  }
+  // }
   .main{
     flex:1;
     overflow: auto;
