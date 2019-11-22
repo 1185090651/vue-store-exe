@@ -1,6 +1,6 @@
 <template>
-  <div class="city-main">
-    同城
+  <div class="sorts-main">
+    分类
   </div>
 </template>
 

@@ -10,9 +10,9 @@ const routes = [
     component: () => import('../views/Home.vue')
   },
   {
-    path: '/city',
-    name: 'city',
-    component: () => import('../views/City.vue')
+    path: '/sorts',
+    name: 'sorts',
+    component: () => import('../views/Sorts.vue')
   },
   {
     path: '/shopcar',
@@ -23,6 +23,24 @@ const routes = [
     path: '/my',
     name: 'my',
     component: () => import('../views/My.vue')
+  },
+  {
+    path: '/login',
+    redirect:'/login/dl',
+    name: 'login',
+    component: () => import('../views/Login.vue'),
+    children:[
+      {
+        path:'dl',
+        name:'dl',
+        component: () => import('../views/login/Dl.vue')
+      },
+      {
+        path:'zc',
+        name:'zc',
+        component: () => import('../views/login/Zc.vue')
+      }
+    ]
   }
 ]
 

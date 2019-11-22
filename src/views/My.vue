@@ -28,7 +28,7 @@
             <img class="iconImage"
               :src="user_image.noLogin_icon" alt="">
             <div class="personInfo"
-                 >
+              @click="login">
               <div>立即登录</div>
             </div>
           </div>
@@ -114,6 +114,12 @@ export default {
   },
   created() {
     this.userinfo_token = localStorage.getItem('login')
+  },
+  methods: {
+    //跳转到登录页面
+    login(){
+      this.$router.push('/login')
+    }
   },
 }
 </script>
