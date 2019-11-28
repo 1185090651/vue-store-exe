@@ -5,7 +5,7 @@
                 label-class="labelClass"
                 is-link
                 center>
-        <template slot="title">
+        <template slot="title"><!-- 插槽 -->
           <!-- 已登录状态 -->
           <div class="personMsg"
           v-if="userinfo_token">
